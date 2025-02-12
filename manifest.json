@@ -1,0 +1,21 @@
+{
+  "name": "Angel Tee",
+  "short_name": "Tee",
+  "start_url": ".",
+  "theme_color": "#4287f5",
+  "background_color": "#ffffff",
+  "display": "fullscreen",
+  "icons":[
+    {
+      "src":"images/manifest-icon-192.maskable",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src":"images/manifest-icon-512.maskable",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+
+}
