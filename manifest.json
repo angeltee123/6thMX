@@ -3,7 +3,7 @@
   "short_name": "MXP",
   "start_url": ".",
   "theme_color": "#4287f5",
-  "background_color": "#ffffff",
+  "background_color": "#0d0505",
   "display": "fullscreen",
   "icons":[
     {
