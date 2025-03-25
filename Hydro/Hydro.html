@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Hydro Portal</title>
+<title>MX Portal</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,7 +27,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 <div class="w3-top">
   <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
     <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-    <!-- <div class="w3-right w3-padding-16">Mail</div> -->
     <div class="w3-center w3-padding-16">Hydro Portal</div>
   </div>
 </div>
@@ -34,76 +34,32 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 <!-- !PAGE CONTENT! -->
 <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
 
-<div class="w3-container w3-center">
-  <div class="w3-xxxlarge w3-center">Hydro Jobs</div>
+  <!-- First Photo Grid-->
 
-<hr>
+<div class="w3-row-padding w3-margin-top">
 
-  <ul class="w3-ul w3-xlarge w3-center">
+ <div class="w3-third w3-center">
+   <img src="img/admin.jpg" style="width:100%">
+  <div class="w3-container w3-center">
+   <a href="Hydroportal/Hydrojobs.html"><h3>Hydro Jobs</h3></a>
+  </div>
+ </div>
 
-    <li><h1><b>Deactivate Util/Aux</b></h1></li>
+ <div class="w3-third w3-center">
+    <img src="img/prsco.png" style="width:100%">
+  <div class="w3-container w3-center">
+    <a href="imds/imds.html"><h3>System Knowledge</h3></a>
+  </div>
+ </div>
 
-<p>
-<li><h3><b>Write-Up:</b></h3></li>
-<li>AUX & UTIL HYD SYS DEACTIVATED TO FOM</li>
-<li><h3><b>Sign-Off:</b></h3></li>
-<li>AUX & UTIL HYD SYS REACTIVATED IAW SSSN 00-20-02</li>
-
-<li><h3><b>Write-Up:</b></h3></li>
-<li>2EA ECBS S/O, 456 UTIL HYD SUCT PUMP, 462 AUX HYD PUMP RELAY,
-2EA W/T INSTALLED ON AUX HANDPUMP & UTIL GTC</li>
-<li><h3><b>Sign-Off:</b></h3></li>
-<li>2EA ECBS RESET, 456 & 462,
-2EA W/T REM FROM AUX HANDPUMP & UTIL GTC IAW SSSN 00-20-02</li>
-</p>
-
-<hr>
-
-    <li><h1><b>Deactivate Booster</b></h1></li>
-
-<p>
-<li><h3><b>Write-Up:</b></h3></li>
-<li>BSTR HYD SYS DEACTIVATED TO FOM</li>
-<li><h3><b>Sign-Off:</b></h3></li>
-<li>BSTR HYD SYS REACTIVATED IAW SSSN 00-20-01</li>
-
-<li><h3><b>Write-Up:</b></h3></li>
-<li>1EA ECB S/O, 439 BSTR SYS HYD SUCT PUMP, 1 EA W/T INSTALLED ON BSTR GTC</li>
-<li><h3><b>Sign-Off:</b></h3></li>
-<li>1EA ECB, 439 RESET, 1EA W/T REM FROM BSTR GTC IAW SSSN 00-20-01</li>
-</p>
-
-<hr>
-
-    <li><h1><b>DISCREPANCY ENTERED IN ERROR</b></h1></li>
-
-<p>
-<li><h3><b>Write-Up:</b></h3></li>
-***ANY WRITE UP***
-</p>
-
-<p>
-<li><h3><b>Sign-Off:</b></h3></li>
-DISCREPANCY ENTERED IN ERROR IAW 00-20-1, PARA 4.6.1.5.4
-</p>
-
-<hr>
-
-    <li><h1><b>DISCREPANCY ENTERED IN ERROR</b></h1></li>
-
-<p>
-<li><h3><b>Write-Up:</b></h3></li>
-***ANY IMDS WRITE UP***
-</p>
-
-<p>
-<li><h3><b>Sign-Off: *ER* in (Activity identifier)</b></h3></li>
-DISCREPANCY ENTERED IN ERROR IAW 00-20-2, PARA 4.24
-</p>
-
-   </ul>
+ <div class="w3-third w3-center">
+   <img src="img/hydro.jpg" style="width:60%">
+  <div class="w3-container w3-center">
+   <a href="Hydro/Hydro.html"><h3>Hydro Bullets</h3></a>
+  </div>
+ </div>
 </div>
-
+  
   <!-- Pagination 
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
@@ -123,7 +79,6 @@ DISCREPANCY ENTERED IN ERROR IAW 00-20-2, PARA 4.24
   <!-- About Section -->
   <div class="w3-container w3-padding-32 w3-center">  
     <h2>Built For Maintainers <i class="fa fa-wrench" style="font-size:36px;color:BLACK"></i></h2>
-
 <br>
    <!-- <img src="/w3images/chef.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533"> -->
   </div>
@@ -137,6 +92,24 @@ DISCREPANCY ENTERED IN ERROR IAW 00-20-2, PARA 4.24
 <!-- End page content -->
 </div>
 
+
+<script src="index.js"></script>
+
+<script>
+    if ('serviceWorker' in navigator) {
+      // Register a service worker hosted at the root of the
+      // site using the default scope.
+      navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+        console.log('Service worker registration succeeded:', registration);
+      }, /*catch*/ function(error) {
+        console.log('Service worker registration failed:', error);
+      });
+    } else {
+      console.log('Service workers are not supported.');
+    }
+  </script>
+
+  
 <script>
 // Script to open and close sidebar
 function w3_open() {
